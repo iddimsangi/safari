@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #7c7c7c;
+    background-color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-rendering: optimizeLegibility;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section{
+    padding: 80px 0;
+}
+header{
+/*    max-width: 1140px;*/
+    height: 100vh;
+    background-image:linear-gradient(rgba(7, 6, 6, 0.56),rgba(0, 0, 0, 0.89)),url(img/backg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+h1,h2,h3{
+    
+    font-weight: 300;
+    text-transform: uppercase;  
+   
+}
+h1{
+    font-size:180%;
+     color: #9b9b9b;
+}
+h2{
+    font-size: 150%;
+    text-align: center;
+}
+h2:after{
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background-color: goldenrod;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 120%;
+}
+
+.main-head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.btn {
+    text-decoration: none;
+/*    border: 1px solid green;*/
+    border-radius: 200px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 80%;
+    margin-right: 20px;
+    color: green;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    color: #fff;
+    background-color: green;
+    transition: background-color 0.2s, color 0.2s;
+    } 
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: #0d450d;
+    border: 1px solid #0d450d;
+} 
+
+
+.btn-empty:link, 
+.btn-empty:visited{
+    color: green;
+    border: 1px solid green;
+}
+.btn-empty:hover, 
+.btn-empty:active{
+    color: #fff;
+    background-color:#0d450d;
+    border: 1px solid #0d450d;
+}
+
+.main-navs {
+    list-style: none;
+    padding-top: 30px;
+    float: right;
+   
+}
+.main-navs li{
+    display: inline-block;
+    padding-left: 20px;
+}
+.main-navs li a:link,
+.main-navs li a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#9b9b9b;
+    padding-bottom: 7px;
+   border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-navs li a:hover,
+.main-navs li a:active{
+    border-bottom: 2px solid #fdeb0f;
+}
+
+.logo {
+    float: left;
+    height: 130px;
+    width:auto;
+}
+ion-icon{
+    font-size: 50px;
+    color: darkgoldenrod;
+    padding-left: 30%;
+}
+.copy-p {
+    line-height: 150%; 
+    font-size: 98%;
+}
+
+.tours {
+    list-style: none;
+    width: 100%;
+}
+
+.tours-li {
+    width: 25%;
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+
+.tours-photo {
+    width: 100%;
+    margin: 0;
+    background-color: #343330;
+}
+.tours-photo img{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+.tours-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
